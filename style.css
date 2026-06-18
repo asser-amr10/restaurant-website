@@ -61,6 +61,7 @@ a {
 }
 
 .page-section.active-section {
+  animation: slideIn 0.35s ease;
   display: flex;
 }
 
@@ -188,10 +189,21 @@ h3 {
 
 .about,
 .contact {
-  display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 48px;
   align-items: center;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .section-text {
