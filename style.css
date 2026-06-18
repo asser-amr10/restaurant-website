@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -56,6 +52,27 @@ a {
   font-weight: 600;
 }
 
+.nav-link.active {
+  color: #c96f3b;
+}
+
+.page-section {
+  display: none;
+}
+
+.page-section.active-section {
+  display: flex;
+}
+
+.section.active-section {
+  display: block;
+}
+
+.about.active-section,
+.contact.active-section {
+  display: grid;
+}
+
 .menu-toggle {
   display: none;
   width: 42px;
@@ -76,7 +93,6 @@ a {
 
 .hero {
   min-height: 78vh;
-  display: flex;
   align-items: center;
   padding: 96px 24px;
   background:
@@ -313,11 +329,14 @@ textarea {
     margin-left: 0;
   }
 
-  .about,
-  .contact,
   .menu-grid,
   .review-grid,
   .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about.active-section,
+  .contact.active-section {
     grid-template-columns: 1fr;
   }
 

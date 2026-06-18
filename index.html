@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saffron Table | Modern Restaurant</title>
+  <title>Example Restaurant | Modern Restaurant Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="logo" href="#home">Saffron Table</a>
+      <a class="logo nav-link active" href="#home" data-section="home">Example Restaurant</a>
 
       <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span>
@@ -18,16 +18,17 @@
       </button>
 
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#home" data-section="home">Home</a></li>
+        <li><a class="nav-link" href="#about" data-section="about">About</a></li>
+        <li><a class="nav-link" href="#menu" data-section="menu">Menu</a></li>
+        <li><a class="nav-link" href="#testimonials" data-section="testimonials">Reviews</a></li>
+        <li><a class="nav-link" href="#contact" data-section="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="page-section hero active-section" id="home">
       <div class="hero-content">
         <p class="eyebrow">Fresh seasonal dining</p>
         <h1>Modern comfort food made for memorable evenings.</h1>
@@ -36,20 +37,20 @@
           and relaxed hospitality every night of the week.
         </p>
         <div class="hero-actions">
-          <a class="button primary-button" href="#menu">View Menu</a>
-          <a class="button secondary-button" href="#contact">Book a Table</a>
+          <a class="button primary-button section-button" href="#menu" data-section="menu">View Menu</a>
+          <a class="button secondary-button section-button" href="#contact" data-section="contact">Book a Table</a>
         </div>
       </div>
     </section>
 
-    <section class="section about" id="about">
+    <section class="page-section section about" id="about">
       <div class="section-text">
         <p class="eyebrow">About us</p>
         <h2>Built around good ingredients and unhurried meals.</h2>
         <p>
-          Saffron Table is a fictional restaurant brand you can customize for a
-          real client later. The layout gives you space for the restaurant story,
-          food philosophy, and what makes the place worth visiting.
+          Example Restaurant is placeholder content for a sellable website
+          template. You can replace this text with any real restaurant story,
+          food philosophy, and reason customers should visit.
         </p>
       </div>
       <div class="stats">
@@ -68,7 +69,7 @@
       </div>
     </section>
 
-    <section class="section menu" id="menu">
+    <section class="page-section section menu" id="menu">
       <div class="section-heading">
         <p class="eyebrow">Menu highlights</p>
         <h2>Simple sections make the menu easy to scan.</h2>
@@ -109,7 +110,7 @@
       </div>
     </section>
 
-    <section class="section testimonials" id="testimonials">
+    <section class="page-section section testimonials" id="testimonials">
       <div class="section-heading">
         <p class="eyebrow">Guest reviews</p>
         <h2>Social proof helps visitors trust the restaurant.</h2>
@@ -127,7 +128,7 @@
       </div>
     </section>
 
-    <section class="section contact" id="contact">
+    <section class="page-section section contact" id="contact">
       <div class="section-text">
         <p class="eyebrow">Visit us</p>
         <h2>Reserve a table or ask about private events.</h2>
@@ -153,7 +154,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Saffron Table. Template website for learning and customization.</p>
+    <p>&copy; 2026 Example Restaurant. Template website for learning and customization.</p>
   </footer>
 
   <script src="script.js"></script>
