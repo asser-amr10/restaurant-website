@@ -52,26 +52,12 @@ a {
   font-weight: 600;
 }
 
-.nav-link.active {
+.nav-links a.active {
   color: #c96f3b;
 }
 
-.page-section {
-  display: none;
-}
-
-.page-section.active-section {
+.page-transition {
   animation: slideIn 0.35s ease;
-  display: flex;
-}
-
-.section.active-section {
-  display: block;
-}
-
-.about.active-section,
-.contact.active-section {
-  display: grid;
 }
 
 .menu-toggle {
@@ -94,6 +80,7 @@ a {
 
 .hero {
   min-height: 78vh;
+  display: flex;
   align-items: center;
   padding: 96px 24px;
   background:
@@ -189,6 +176,7 @@ h3 {
 
 .about,
 .contact {
+  display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 48px;
   align-items: center;
@@ -347,8 +335,8 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .about.active-section,
-  .contact.active-section {
+  .about,
+  .contact {
     grid-template-columns: 1fr;
   }
 

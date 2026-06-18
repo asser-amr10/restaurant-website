@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Restaurant | Home</title>
+  <title>Example Restaurant | Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,29 +18,38 @@
       </button>
 
       <ul class="nav-links">
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="page-transition">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Fresh seasonal dining</p>
-        <h1>Modern comfort food made for memorable evenings.</h1>
-        <p class="hero-text">
-          A flexible restaurant website template that can be customized for a
-          cafe, bistro, fine dining restaurant, bakery, or local food business.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary-button" href="menu.html">View Menu</a>
-          <a class="button secondary-button" href="contact.html">Book a Table</a>
-        </div>
+    <section class="section contact">
+      <div class="section-text">
+        <p class="eyebrow">Visit us</p>
+        <h1>Reserve a table or ask about private events.</h1>
+        <p>123 Market Street, Downtown<br>Open daily from 12:00 PM to 11:00 PM</p>
       </div>
+
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com">
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell us what you need"></textarea>
+        </label>
+        <button class="button primary-button" type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
